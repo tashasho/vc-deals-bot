@@ -2,7 +2,7 @@ name: Daily VC deals digest
 
 on:
   schedule:
-    - cron: '30 13 * * 1-5'   # 13:30 UTC, Mon-Fri (markets-day cadence)
+    - cron: '30 13 * * *'   # 13:30 UTC, daily
   workflow_dispatch:
     inputs:
       dry_run:
